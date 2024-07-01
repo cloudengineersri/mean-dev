@@ -1,5 +1,9 @@
 conn = new Mongo();
 db = conn.getDB("bezkoder_db");
+db.auth(
+    mongo,
+    mongo,
+ );
 db.createCollection('tutorials');
 db.tutorials.insertOne({
     title: "Js Tut#",
