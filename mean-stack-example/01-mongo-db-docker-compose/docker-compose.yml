@@ -7,6 +7,9 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: mongo
       MONGO_INITDB_ROOT_PASSWORD: mongo
+    volumes:
+      - ./mongo-db/data:/data/db
+      - ./mongo-init/init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   MongoDB-Express:
     image: mongo-express
