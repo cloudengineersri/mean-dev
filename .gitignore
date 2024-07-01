@@ -1,2 +1,2 @@
-/workspaces/mean-dev/mean-stack-example/01-mongo-db-docker-compose/mongo-db/data/**/*
-/mean-dev/mean-stack-example/01-mongo-db-docker-compose/mongo-db/data/**/*
+data/**/*
+mean-stack-example/01-mongo-db-docker-compose/mongo-db/data
