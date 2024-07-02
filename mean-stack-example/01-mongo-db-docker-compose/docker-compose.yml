@@ -20,3 +20,5 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: mongo
       ME_CONFIG_MONGODB_URL: mongodb://mongo:mongo@mongo:27017/
       ME_CONFIG_BASICAUTH: false
+    depends_on:
+      - mongo
