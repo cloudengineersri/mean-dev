@@ -1,6 +1,13 @@
 //conn = new Mongo();
 //db = conn.getDB("bezkoder_db");
 use('bezkoder_db');
+db.createUser(
+  {
+    user: "mongo",
+    pwd: "mongo",
+    roles: [ { role: "readWrite", db: "bezkoder_db" }]
+  }
+)
 db.createCollection('tutorials');
 db.tutorials.insertOne({
     title: "Js Tut#",
