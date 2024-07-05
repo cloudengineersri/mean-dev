@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
-const baseUrl = 'http://localhost:8080/api/tutorials';
+const baseUrl = 'https://literate-space-acorn-v6gr7g54x94xhwv69-8080.app.github.dev/api/tutorials';
 
 @Injectable({
   providedIn: 'root',
