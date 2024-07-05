@@ -1,41 +1,5 @@
 //conn = new Mongo();
 //db = conn.getDB("bezkoder_db");
-use('admin');
-db.createUser(
-  {
-    user: "mongo",
-    pwd: "mongo",
-    roles: [ 
-      { 
-        role: "readWrite", db: "admin" 
-      },  
-      { 
-        role: "readWrite", db: "test" 
-      },  
-      { 
-        role: "readWrite", db: "bezkoder_db" 
-      },
-      { 
-        role: "readWrite", db: "MyDatabaseName" 
-      },
-      { 
-        role: "readWrite", db: "mongodbVSCodePlaygroundDB" 
-      }
-    ]
-  }
-)
-use('test');
-db.createUser(
-  {
-    user: "mongo",
-    pwd: "mongo",
-    roles: [ 
-      { 
-        role: "readWrite", db: "test" 
-      }
-    ]
-  }
-)
 use('bezkoder_db');
 db.createUser(
   {
@@ -48,7 +12,6 @@ db.createUser(
     ]
   }
 )
-
 db.createCollection('tutorials');
 db.tutorials.insertOne({
     title: "Js Tut#",
